@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NavGraph</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nextBtn">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_over">Game Over</string>
+    <string name="nex_marton">Next Marton</string>
+    <string name="play">Play</string>
+    <string name="failed">You failed !!!</string>
+    <string name="try_again">Try again</string>
+    <string name="congrat">Congratulation</string>
+</resources>

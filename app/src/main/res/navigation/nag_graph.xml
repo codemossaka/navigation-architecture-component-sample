@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nag_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.godsonpeya.navgraph.HomeFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="ru.godsonpeya.navgraph.GameFragment"
+        android:label="Game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_congratFragment"
+            app:destination="@id/congratFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_gameFragment_to_failFragment"
+            app:destination="@id/failFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/congratFragment"
+        android:name="ru.godsonpeya.navgraph.CongratFragment"
+        android:label="Congratulation"
+        tools:layout="@layout/fragment_congrat">
+        <action
+            android:id="@+id/action_congratFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/failFragment"
+        android:name="ru.godsonpeya.navgraph.FailFragment"
+        android:label="Fail"
+        tools:layout="@layout/fragment_fail" >
+        <action
+            android:id="@+id/action_failFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
